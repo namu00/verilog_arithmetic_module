@@ -1,5 +1,6 @@
-# <div align="center"> verilog arithmetic module </div>
-## verilog 32-bit integer arithmetic modules
+# verilog arithmetic module
+## synthesiseable verilog 32-bit integer arithmetic module design space
+
 
 + ### Dir_Info.  
 |Directory|Tag|  
