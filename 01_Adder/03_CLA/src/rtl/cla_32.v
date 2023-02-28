@@ -8,7 +8,7 @@ module cla_32(
 
     wire carry;
 
-    cla_16 low_4bit(
+    cla_16 low_16bit(
         .src1       (src1[15:0]),
         .src2       (src2[15:0]),
         .sub_flag   (sub_flag),
@@ -16,7 +16,7 @@ module cla_32(
         .carry_out  (carry)
     );
 
-    cla_16 high_4bit(
+    cla_16 high_16bit(
         .src1       (src1[31:16]),
         .src2       (src2[31:16]),
         .sub_flag   (carry),
