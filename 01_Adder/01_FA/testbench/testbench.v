@@ -14,41 +14,50 @@ module testbench();
     );
 
     initial begin
+
+        //TESTCASE 1
         src1 = 0;
         src2 = 0;
         carry_in = 0;
         #10;
 
+        //TESTCASE 2
         src1 = 0;
         src2 = 1;
         carry_in = 0;
         #10;
 
+        //TESTCASE 3
         src1 = 1;
         src2 = 0;
         carry_in = 0;
         #10;
 
+        //TESTCASE 4
         src1 = 1;
         src2 = 1;
         carry_in = 0;
         #10;
 
+        //TESTCASE 5
         src1 = 0;
         src2 = 0;
         carry_in = 1;
         #10;
 
+        //TESTCASE 6
         src1 = 0;
         src2 = 1;
         carry_in = 1;
         #10;
 
+        //TESTCASE 7
         src1 = 1;
         src2 = 0;
         carry_in = 1;
         #10;
 
+        //TESTCASE 8
         src1 = 1;
         src2 = 1;
         carry_in = 1;
