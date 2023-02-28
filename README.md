@@ -1,5 +1,5 @@
 # verilog arithmetic module
-### *synthesiseable verilog 32-bit integer arithmetic module design space*
+> ## *synthesiseable verilog 32-bit integer arithmetic module design space*
 
 
 + ### Dir_Info.  
