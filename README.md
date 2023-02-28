@@ -2,7 +2,7 @@
 > ### *synthesiseable verilog 32-bit integer arithmetic module design space*
 
 
-+ ### Dir_Info.  
++ ### Directory_Info.  
 |Directory|Tag|  
 |:---:|:---:|  
 |00_verilog_template|Verilog Project Template|  
