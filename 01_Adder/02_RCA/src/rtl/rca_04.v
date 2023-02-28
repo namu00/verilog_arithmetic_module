@@ -1,4 +1,4 @@
-module cla_04(
+module rca_04(
     input [3:0] src1,
     input [3:0] src2,
     input sub_flag,

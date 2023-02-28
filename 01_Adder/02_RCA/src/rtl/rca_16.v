@@ -1,4 +1,4 @@
-module cla_16(
+module rca_16(
     input [15:0] src1,
     input [15:0] src2,
     input sub_flag,
@@ -8,7 +8,7 @@ module cla_16(
 
     wire carry;
 
-    cla_08 low_8bit(
+    rca_08 low_8bit(
         .src1       (src1[7:0]),
         .src2       (src2[7:0]),
         .sub_flag   (sub_flag),
@@ -16,7 +16,7 @@ module cla_16(
         .carry_out  (carry)
     );
 
-    cla_08 high_8bit(
+    rca_08 high_8bit(
         .src1       (src1[15:8]),
         .src2       (src2[15:8]),
         .sub_flag   (carry),

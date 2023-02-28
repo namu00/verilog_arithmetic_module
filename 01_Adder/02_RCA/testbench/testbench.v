@@ -5,7 +5,7 @@ module testbench();
     wire [31:0] sum;
     wire carry_out;
 
-    cla_32 cla_32_dut(
+    rca_32 rca_32_dut(
         .src1       (src1),
         .src2       (src2),
         .sub_flag   (sub_flag),
