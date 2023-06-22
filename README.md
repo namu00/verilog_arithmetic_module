@@ -4,7 +4,7 @@
 + ### Target Specs  
 |Name|Spec|Description|    
 |:--:|:--:|:--:|  
-|Clock Freq| 50MHz | - |  
+|Clock Freq| 50MHz | Only Divider & Multiplier unit dependants clock |  
 |Reset Type| Asynchronous <br/> Active-Low| - | 
 |Input Size| 32-bit | - |
 |Output Size| 32-bit or 64-bit| Only Multiplier Unit has 64-bit output|
