@@ -20,6 +20,7 @@ module testbench();
             sub_flag = s_flag; 
             src1 = $random() % 32'hffff_ffff;
             src2 = $random() % 32'hffff_ffff;
+            #1;
 
             if(s_flag) begin
                 if(sum != (src1 - src2)) begin

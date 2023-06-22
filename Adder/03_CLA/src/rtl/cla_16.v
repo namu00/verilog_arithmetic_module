@@ -1,6 +1,7 @@
 module cla_16(
     input [15:0] src1,
     input [15:0] src2,
+    input carry_in,
     input sub_flag,
     output [15:0] sum,
     output carry_out
@@ -11,6 +12,7 @@ module cla_16(
     cla_08 low_8bit(
         .src1       (src1[7:0]),
         .src2       (src2[7:0]),
+        .carry_in   (carry_in),
         .sub_flag   (sub_flag),
         .sum        (sum[7:0]),
         .carry_out  (carry)
@@ -19,7 +21,8 @@ module cla_16(
     cla_08 high_8bit(
         .src1       (src1[15:8]),
         .src2       (src2[15:8]),
-        .sub_flag   (carry),
+        .carry_in   (carry),
+        .sub_flag   (sub_flag),
         .sum        (sum[15:8]),
         .carry_out  (carry_out)
     );
