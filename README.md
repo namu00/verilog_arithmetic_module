@@ -23,7 +23,7 @@
 # Multiplier Algorithm
 > ### (Multiplier) * (Multiplicand) == (Product)  
   
-## Signed Booth Algorithm SD code
++ ## Signed Booth Algorithm SD code
 |Q|Q-|Action|  
 |:---:|:---:|:---| 
 |0|0|Right Shift(Signed Extension)|  
@@ -45,7 +45,7 @@
 
 __RESULT__ = __Accumulator + Q__ = __1111_0111__  
 
-## Unsigned Booth Algorithm SD code  
++ ## Unsigned Booth Algorithm SD code  
 |LSB of Q|Action|  
 |:---:|:---:|  
 |0|Righ Shift <br> (With Accumulator Carry)|  
