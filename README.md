@@ -67,7 +67,6 @@ __RESULT__ = __Accumulator__ + __Q__ = __0010_0111__
 
 --- 
 # Divider Algorithm
-## Division Algorithm (Non-Restoring)
 > ### (Dividend) / (Divisor) == (Quotient) ... (Remainder)  
 + ## Parameter Description
     ### __Main Register: N, Q, M, A__  
