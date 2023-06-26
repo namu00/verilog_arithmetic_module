@@ -78,7 +78,7 @@ module testbench;
         @(posedge clk);
 
         for(i = 1; i < 500; i = i + 1)begin
-            div_test($urandom()%32, $urandom()%32);
+            div_test($urandom()%32'hFFFF_FFFF, $urandom()%32'hFFFF_FFFF);
         end
 
         $display("##### ALL TESTCASE PASSED #####");
