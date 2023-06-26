@@ -19,10 +19,7 @@
 |Multiplier|Multiplication Hardware directory|  
 |Divider|Division Hardware directory|  
 
-
-+ ### Multiplier Algorithm
-> (Multiplier) * (Multiplicand) == (Product)  
----  
+# Multiplication Algorithm
 ## Signed Booth Algorithm SD code
 |Q|Q-|Action|  
 |:---:|:---:|:---| 
