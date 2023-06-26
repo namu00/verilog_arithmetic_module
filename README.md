@@ -100,7 +100,8 @@ ELSE, Goto __Step 6.__
 |3||00011<br>11000<br>00011|1100<br>1100<br>1100|Shift Left A, Q<br>A = A - M<br>Q[0] = 0 and Restore A|  
 |2||00111<br>11100<br>00111|1000<br>1000<br>1000|Shift Left A, Q<br>A = A - M<br>Q[0] = 0 and Restore A|
 |1||01111<br>00100<br>00100|0000<br>0000<br>0001|Shift Left A, Q<br>A = A - M<br>Q[0] = 1|  
-|RESULT||0_0100|0001| A[3:0] = Remainder<br>Q = Quotient|  
+|RESULT||0_0100|0001| A[3:0] = Remainder<br>Q = Quotient|
+  
 __RESULT__: __Q = register Q__, __R = register A[3:0]__ 
 
 + ## Non-Restoring Division Flow 
