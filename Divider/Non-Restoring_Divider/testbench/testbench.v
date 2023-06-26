@@ -16,7 +16,7 @@ module testbench;
     div32 u_div32(
         .clk (clk),
         .n_rst (n_rst),
-        
+
         .start (start),
         .src1 (src1),
         .src2 (src2),
@@ -78,8 +78,8 @@ module testbench;
         wait(n_rst);
         @(posedge clk);
 
-        for(i = 1; i < 500; i = i + 1)begin
-            div_test($urandom()%32, $urandom()%32);
+        for(i = 1; i < 5000; i = i + 1)begin
+            div_test($urandom()%32'hFFFF_FFFF, $urandom()%32'hFFFF_FFFF);
         end
 
         $display("##### ALL TESTCASE PASSED #####");
