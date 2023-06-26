@@ -21,8 +21,8 @@
 
 
 # Multiplier Algorithm
-(Multiplier) * (Multiplicand) == (Product)  
----  
+> ### (Multiplier) * (Multiplicand) == (Product)  
+  
 ## Signed Booth Algorithm SD code
 |Q|Q-|Action|  
 |:---:|:---:|:---| 
