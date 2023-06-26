@@ -19,7 +19,7 @@
 |Multiplier|Multiplication Hardware directory|  
 |Divider|Division Hardware directory|  
 
-
+--- 
 # Multiplier Algorithm
 > ### (Multiplier) * (Multiplicand) == (Product)  
   
