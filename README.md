@@ -101,8 +101,8 @@ ELSE, Goto __Step 6.__
 |2||00111<br>11100<br>00111|1000<br>1000<br>1000|Shift Left A, Q<br>A = A - M<br>Q[0] = 0 and Restore A|
 |1||01111<br>00100<br>00100|0000<br>0000<br>0001|Shift Left A, Q<br>A = A - M<br>Q[0] = 1|  
 |RESULT||0_0100|0001| A[3:0] = Remainder<br>Q = Quotient|
-  
-__RESULT__: __Q = register Q__, __R = register A[3:0]__ 
+
+__RESULT__: __Q = 0001__, __R = 0100__ 
 
 + ## Non-Restoring Division Flow 
 1. Initialize with Q = Dividend, M = Divisor, A = 0
@@ -137,4 +137,4 @@ ELSE, Do Nothing.
 |LAST||00100<br>00100|0001<br>0001|__MSB_A is 0__, Do Nothing|  
 |RESULT||0_0100|0001| A[3:0] = Remainder<br>Q = Quotient|
 
-__RESULT__: __Q = register Q__, __R = register A[3:0]__ 
+__RESULT__: __Q = 0001__, __R = 0100__ 
