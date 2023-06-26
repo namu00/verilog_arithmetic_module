@@ -109,7 +109,7 @@ module div32(
         if(busy)
             {shift_acc, shift_q} <= {acc, q} << 1;
         else
-            {shift_acc, shift_acc} <= {33'h0, 32'h0};
+            {shift_acc, shift_q} <= {33'h0, 32'h0};
     end
 
     //restoring division logic
