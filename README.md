@@ -26,10 +26,10 @@
 + ## Signed Booth Algorithm SD code
 |Q|Q-|Action|  
 |:---:|:---:|:---| 
-|0|0|Right Shift(Signed Extension)|  
-|1|1|Right Shift(Signed Extension)|  
-|1|0|SUB Multiplier from Accumulator and Right Shift|  
-|0|1|ADD Multiplier to Accumulator and Right Shift|  
+|0|0|Shift Right(Signed Extension)|  
+|1|1|Shift Right(Signed Extension)|  
+|1|0|SUB Multiplier from Accumulator and Shift Right|  
+|0|1|ADD Multiplier to Accumulator and Shift Right|  
 
 ### Example   
 >    Ex) 1101 * 0011 = 1111_0111  
@@ -38,10 +38,10 @@
 | N | Accumulator | Q | Q-|Description|  
 |:---:|:---:|:---:|:---:|:---:|    
 |Ready|0000|0011|0|Initialize with <br> A = 0, Q = Multiplicand, Q- = 0|    
-|1|0011<br>0001|0011<br>1001|0<br>1|SUB 1101 from Accumulator<br>Signed Right Shift|  
-|2|0000|1100|1|Right Shift (Signed Ext)|    
-|3|1101<br>1110|1100<br>1110|1<br>0|ADD Accumulator to 1101<br>Signed Right Shift|
-|4|1111|0111|0|Right Shift (Signed Ext)|
+|1|0011<br>0001|0011<br>1001|0<br>1|SUB 1101 from Accumulator<br>Signed Shift Right|  
+|2|0000|1100|1|Shift Right (Signed Ext)|    
+|3|1101<br>1110|1100<br>1110|1<br>0|ADD Accumulator to 1101<br>Signed Shift Right|
+|4|1111|0111|0|Shift Right (Signed Ext)|
 
 __RESULT__ = __Accumulator + Q__ = __1111_0111__  
 
@@ -49,7 +49,7 @@ __RESULT__ = __Accumulator + Q__ = __1111_0111__
 |LSB of Q|Action|  
 |:---:|:---:|  
 |0|Righ Shift <br> (With Accumulator Carry)|  
-|1|ADD Multiplier to Accumulator and Right Shift <br>(With Accumulation Carry)|  
+|1|ADD Multiplier to Accumulator and Shift Right <br>(With Accumulation Carry)|  
 
 ### Example   
 >   Ex) 1101 * 0011 = 0010_0111  
