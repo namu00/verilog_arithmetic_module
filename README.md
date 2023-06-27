@@ -118,7 +118,7 @@ ELSE __MSB of A__ == __0__, __Q[0] = 1__
 5. IF __N != 0__, Goto __Step 2.__  
 ELSE, Goto __Step 6.__
 
-6. IF __MSB of A__ == __1__, update __register A__ to __A + M__  
+6. IF __MSB of A__ == __1__, update __A = A + M__  
 ELSE, Do Nothing.
 
 7. __DONE!__ (__Q: Quotient, A: Remainder__)
