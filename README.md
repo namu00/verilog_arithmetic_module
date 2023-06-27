@@ -110,8 +110,8 @@ __RESULT__: __Q = 0001__, __R = 0100__
 2. IF __MSB of A__ == __1__, Shift __A,Q__ and update __A = A + M__  
 ELSE __MSB of A__ == __0__, Shift __A,Q__ and update __A = A - M__  
 
-3. IF __MSB of A__ == __1__, __LSB of Q__ to __0__  
-ELSE __MSB of A__ == __0__, __LSB of Q__ to __1__  
+3. IF __MSB of A__ == __1__, __Q[0] = 0__  
+ELSE __MSB of A__ == __0__, __Q[0] = 1__  
 
 4. Counter update as __N = N - 1__
 
