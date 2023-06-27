@@ -130,10 +130,10 @@ ELSE, Do Nothing.
 | N | M | A | Q | Description |  
 |:--:|:--:|:--:|:--:|:--:|    
 |Ready|1011|00000|1111|Initialize|
-|4||00001<br>10110<br>10110|1110<br>1110<br>1110|SHIFT LEFT {A,Q}<br>__MSB_A was 0__, Update A = A  - M <br> __MSB_A is 1__, Update __LSB_Q = 0__|  
-|3||01101<br>11000<br>11000|1100<br>1100<br>1100|SHIFT LEFT {A,Q}<br>__MSB_A was 1__, Update A = A  + M <br> __MSB_A is 1__, Update __LSB_Q = 0__|  
-|2||10001<br>11100<br>11100|1000<br>1000<br>1000|SHIFT LEFT {A,Q}<br>__MSB_A was 1__, Update A = A  + M <br> __MSB_A is 1__, Update __LSB_Q = 0__|  
-|1||11001<br>00100<br>00100|0000<br>0000<br>0001|SHIFT LEFT {A,Q}<br>__MSB_A was 1__, Update A = A  + M <br> __MSB_A is 0__, Update __LSB_Q = 1__|  
+|4||00001<br>10110<br>10110|1110<br>1110<br>1110|SHIFT LEFT {A,Q}<br>A = A  - M <br> __Q[0] = 0__|  
+|3||01101<br>11000<br>11000|1100<br>1100<br>1100|SHIFT LEFT {A,Q}<br>A = A  + M <br> __Q[0] = 0__|  
+|2||10001<br>11100<br>11100|1000<br>1000<br>1000|SHIFT LEFT {A,Q}<br>A = A  + M <br> __Q[0] = 0__|  
+|1||11001<br>00100<br>00100|0000<br>0000<br>0001|SHIFT LEFT {A,Q}<br>A = A  + M <br> __Q[0] = 1__|  
 |LAST||00100<br>00100|0001<br>0001|__MSB_A is 0__, Do Nothing|  
 |RESULT||0_0100|0001| A[3:0] = Remainder<br>Q = Quotient|
 
